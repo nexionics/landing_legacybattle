@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Battle - The Ultimate Sports Betting Experience</title>
+    <meta name="description" content="Join Legacy Battle - Battle against other players and real sports games. Sign up for early access to the most exciting sports betting app.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-circle">
+                    <span class="logo-text">LB</span>
+                </div>
+                <span class="brand-name">Legacy Battle</span>
+            </div>
+            <nav class="nav">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#signup" class="nav-link">Early Access</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        The Ultimate
+                        <span class="gradient-text">Sports Betting</span>
+                        Experience
+                    </h1>
+                    <p class="hero-subtitle">
+                        Battle against other players in games of skill and compete against real sports games. 
+                        Join the revolution in sports betting where strategy meets excitement.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="cta-button primary" onclick="scrollToSignup()">
+                            Get Early Access
+                        </button>
+                        <button class="cta-button secondary" onclick="scrollToFeatures()">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="card card-1">🏈</div>
+                        <div class="card card-2">🏀</div>
+                        <div class="card card-3">⚾</div>
+                        <div class="card card-4">🏒</div>
+                    </div>
+                    <div class="glow-orb"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Legacy Battle?</h2>
+                <p class="section-subtitle">Experience the future of sports betting with skill-based gameplay</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚔️</div>
+                    <h3 class="feature-title">Player vs Player Battles</h3>
+                    <p class="feature-description">Challenge other players in head-to-head skill-based competitions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">Real Sports Integration</h3>
+                    <p class="feature-description">Bet on live sports games with real-time odds and statistics</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Skill-Based Gaming</h3>
+                    <p class="feature-description">Win based on your knowledge and strategy, not just luck</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3 class="feature-title">Premium Experience</h3>
+                    <p class="feature-description">Sleek interface with casino-grade security and reliability</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Get started in three simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Sign Up</h3>
+                    <p class="step-description">Create your account and join the Legacy Battle community</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Choose Your Battle</h3>
+                    <p class="step-description">Select from player battles or real sports betting opportunities</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Win Big</h3>
+                    <p class="step-description">Use your skills and knowledge to dominate the competition</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Early Access Signup -->
+        <section id="signup" class="signup">
+            <div class="signup-content">
+                <div class="signup-text">
+                    <h2 class="signup-title">Get Early Access</h2>
+                    <p class="signup-subtitle">
+                        Be among the first to experience Legacy Battle. Join our exclusive early access program 
+                        and get notified when we launch.
+                    </p>
+                    <div class="signup-benefits">
+                        <div class="benefit">✨ Exclusive early access</div>
+                        <div class="benefit">🎁 Special launch bonuses</div>
+                        <div class="benefit">📱 First to try new features</div>
+                    </div>
+                </div>
+                <div class="signup-form-container">
+                    <form class="signup-form" id="signupForm">
+                        <div class="form-group">
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email address" 
+                                required
+                                class="form-input"
+                            >
+                        </div>
+                        <button type="submit" class="form-button">
+                            <span class="button-text">Join Early Access</span>
+                            <span class="button-loading" style="display: none;">Joining...</span>
+                        </button>
+                        <p class="form-disclaimer">
+                            By signing up, you agree to receive updates about Legacy Battle. 
+                            We respect your privacy and won't spam you.
+                        </p>
+                    </form>
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        <div class="success-icon">✅</div>
+                        <h3>Welcome to Legacy Battle!</h3>
+                        <p>You're now on our early access list. We'll notify you as soon as we launch!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-circle">
+                            <span class="logo-text">LB</span>
+                        </div>
+                        <span class="brand-name">Legacy Battle</span>
+                    </div>
+                    <p class="footer-description">
+                        The ultimate sports betting experience where skill meets excitement.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Product</h4>
+                        <a href="#features" class="footer-link">Features</a>
+                        <a href="#how-it-works" class="footer-link">How It Works</a>
+                        <a href="#signup" class="footer-link">Early Access</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-title">Legal</h4>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Responsible Gaming</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-title">Support</h4>
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">Community</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Legacy Battle. All rights reserved.</p>
+                <p class="disclaimer">Please gamble responsibly. Must be 21+ to participate.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
